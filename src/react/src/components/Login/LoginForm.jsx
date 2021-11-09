@@ -98,7 +98,7 @@ export default function LoginForm() {
           </form>
 
           <span>
-            <a href="http://vestacp.com/">vestacp.com</a>
+            <a href="http://vestacp.com/">YA MUM GAY!</a>
           </span>
         </LoginLayout>
       </div>

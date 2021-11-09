@@ -40,7 +40,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "update-browserslist": "./node_modules/.bin/browserslist --update-db"
+    "update-browserslist": "./node_modules/.bin/browserslist --update-db",
+    "startport": "cross-env PORT=8080 react-scripts start"
   },
   "proxy": "https://panel.monkeyisland.com.au:48085",
   "devDependencies": {

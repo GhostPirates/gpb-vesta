@@ -332,7 +332,7 @@ const EditWeb = props => {
         }
       </AddItemLayout>
 
-      <div className={`modal fade ${modalVisible ? 'show' : ''}`} id="c-panel-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style={{ display: modalVisible ? 'block' : 'none' }}>
+      <div className={`modal fade ${modalVisible ? 'show' : ''}`} id="c-panel-modal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style={{ display: modalVisible ? 'block' : 'none' }}>
         <div className="modal-dialog" role="document">
           <div className="modal-content">
             <div className="modal-header">

@@ -66,12 +66,14 @@ const App = () => {
   const dispatch = useDispatch();
   const session = useSelector(state => state.session);
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     if (!Object.entries(session.i18n).length) {
       dispatch(checkAuthHandler())
         .then(token => {
           setLoading(false);
+          // Dispatch an event
+          var evt = new CustomEvent("GpbReactLoadEvent", {detail: "React has loaded... now onto the hacks! ✌(◕‿-)✌"});
+          window.dispatchEvent(evt);
         }, (error) => {
           console.error(error);
           return history.push('/login');
